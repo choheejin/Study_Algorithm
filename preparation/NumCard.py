@@ -19,3 +19,18 @@ for i in range(n):
   result = max(result, min_data)
 
 print(result)
+
+# 2중 반복문 이용
+
+n, m = map(int, input().split())
+
+result = 0
+
+for i in range(n):
+  data = list(map(int, input().split()))
+  min_data = 10001
+  for a in data:
+    min_data = min(min_data, a)
+  result = max(result, min_data)
+
+print(result)
